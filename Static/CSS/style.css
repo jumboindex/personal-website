@@ -4,6 +4,7 @@ html {
     background-color:black;
     color: white;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 /* Fonts */
@@ -24,4 +25,41 @@ span {
 
 /* Nav styling */
 
+nav {
+    display:block;
+    position: fixed;
+    height: 4.5rem;
+    width: 100%;
+    background-color: black;
+    border: solid 1px red;
+
+}
+
+nav ul {
+    float: right;
+    margin: 1.5rem 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.25rem;
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid red;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* body offset for fixed navbar */
+
+main {
+    border: solid 1px red;
+    overflow: scroll;
+    position: relative;
+    top: 4.5rem;
+}
 

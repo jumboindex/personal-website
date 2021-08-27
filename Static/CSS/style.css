@@ -13,13 +13,6 @@ html {
     margin: 1rem 0;
 }
 
-/*
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 /* Fonts */
 
 h1, h2, h3, h4, h5, h6, span{
@@ -210,7 +203,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: solid 1px green;
+    flex-flow: row wrap-reverse;
 }
 
 .about figure img {
@@ -226,5 +219,163 @@ main {
 .about p {
     width: 50%;
     margin-right: 2rem;
-    flex-basis: ;
+}
+
+/* Technologies styling */
+
+.technologies {
+    border: solid 1px red;
+
+}
+
+.technologies h2 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.tech-grid {
+    border: solid 1px green;
+    margin: 0 1rem;
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-areas: 
+                        'html CSS Javascript Python'
+                        'Pandas Pandas Flask Flask'
+                        'Jira Confluence Grafana Observium'
+                        'AWS AWS OnApp OnApp'
+                        'CentOS Ubuntu . .';
+    justify-items: stretch;
+    align-items: center;
+}
+
+.tech {
+    
+    height: 9.375rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.tech h3 {
+    line-height: 9.375rem;
+    font-size: 1.5rem;
+}
+
+.html-card {
+    grid-area: html;
+}
+
+.html-card:hover {
+    background-color: #f06529;
+}
+
+.CSS-card {
+    grid-area: CSS;
+}
+
+.CSS-card:hover {
+    background-color: #3c99dc;
+}
+
+.Javascript-card {
+    grid-area: Javascript;
+} 
+
+.Javascript-card:hover {
+    background-color: #f0db4f;
+}
+
+.Python-card {
+    grid-area: Python;
+}
+
+.Python-card:hover {
+    background-color: #ffd43b;
+}
+
+.pandas-card {
+    grid-area: Pandas;
+}
+
+.pandas-card:hover {
+    background-color: #150458;
+}
+
+.Flask-card {
+    grid-area: Flask;
+}
+
+.Flask-card:hover {
+    background-color: white;
+    color: black;
+}
+
+.Jira-card {
+    grid-area: Jira;
+}
+
+.Jira-card:hover {
+    background-color: #0052CC;
+}
+
+.Confluence-card {
+    grid-area: Confluence;
+}
+
+.Confluence-card:hover {
+    background-color: #0052CC;
+}
+
+.Grafana-card {
+    grid-area: Grafana;
+}
+
+.Grafana-card:hover{
+    background-color: #fba35a;
+}
+
+.Observium-card {
+    grid-area: Observium;
+}
+
+.Observium-card:hover{
+    background-color: #4051b5;
+}
+
+.AWS-card {
+    grid-area: AWS;
+}
+
+.AWS-card:hover {
+    background-color: #F90;
+}
+
+.OnApp-card {
+    grid-area: OnApp;
+}
+
+.OnApp-card:hover {
+    background-color: #0b1e48;
+}
+
+.CentOS-card {
+    grid-area: CentOS;
+}
+
+.CentOS-card:hover {
+    background-color: #9CCD2A;
+}
+
+.Ubuntu-card {
+    grid-area: Ubuntu;
+}
+
+.Ubuntu-card:hover {
+    background-color: #dd4814;
 }

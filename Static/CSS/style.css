@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, span{
     font-family: 'Ubuntu', sans-serif;
 }
 
-p, a {
+p, a, figcaption {
     font-family: 'Oxygen', sans-serif;
     text-decoration: none;
     color: white;
@@ -74,6 +74,7 @@ main {
     /*border: solid 1px red;*/
     position: relative;
     top: 4.5rem;
+    overflow: hidden;
 }
 
 /* Home content styling */
@@ -185,4 +186,45 @@ main {
 .datacenter h2 {
     font-size: 2rem;
     font-weight: 500;
+}
+
+/* About Section styling */
+
+.about {
+    border: solid 1px red;
+    
+}
+
+.about h2 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.about-flexbox {
+    height: 18.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 1px green;
+}
+
+.about figure img {
+    height: 250px;
+    width: 250px;
+    border-radius:  0.625rem; 
+}
+
+.about figure figcaption {
+    font-size: 0.75rem;
+}
+
+.about p {
+    width: 50%;
+    margin-right: 2rem;
+    flex-basis: ;
 }

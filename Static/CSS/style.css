@@ -5,6 +5,7 @@ html {
     color: white;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    overflow: visible;
 }
 
 .container {
@@ -12,6 +13,14 @@ html {
     height:26rem; 
     margin: 1rem 0;
 }
+
+.btn {
+    font-weight: 500;
+    background-color: red;
+    padding: 1rem;
+    border-radius: 3.125rem;
+}
+
 
 /* Fonts */
 
@@ -67,20 +76,18 @@ main {
     /*border: solid 1px red;*/
     position: relative;
     top: 4.5rem;
-    overflow: hidden;
 }
 
 /* Home content styling */
 
 .home {
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: space-evenly;
 }
 
 .home-container {
-    width: 50%;
+    width: 45%;
     height: 25rem;
-    margin: 0 1rem;
 }
 
 .content { 
@@ -94,7 +101,6 @@ main {
                         '. btn btn .';
     justify-items: center;
     align-items: center;
-    /*border: solid 1px blue;*/
 }
 
 .title-row-1 {
@@ -143,14 +149,9 @@ main {
 
 .btn-contact {
     grid-area: btn;
-    font-weight: 500;
-    background-color: red;
-    padding: 1rem;
-    border-radius: 3.125rem;
 }
 
 .img-container {
-    /*border:solid 1px green;*/
     display: flex;
     justify-content: center;
     align-items: center;   
@@ -174,19 +175,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
 }
 
 .datacenter h2 {
     font-size: 2rem;
     font-weight: 500;
+    max-width: 80%;
 }
 
 /* About Section styling */
-
-.about {
-    border: solid 1px red;
-    
-}
 
 .about h2 {
     text-align: center;
@@ -217,15 +215,15 @@ main {
 }
 
 .about p {
-    width: 50%;
-    margin-right: 2rem;
+    width: 45%;
+    max-width: 600px;
+    margin-right: 2rem;  
 }
 
 /* Technologies styling */
 
 .technologies {
-    border: solid 1px red;
-
+    margin: 1rem 0;
 }
 
 .technologies h2 {
@@ -238,8 +236,7 @@ main {
 }
 
 .tech-grid {
-    border: solid 1px green;
-    margin: 0 1rem;
+    margin: 0 5vw;
     display: grid;
     grid-gap: 1.25rem;
     grid-template-areas: 
@@ -253,7 +250,6 @@ main {
 }
 
 .tech {
-    
     height: 9.375rem;
     text-align: center;
     border: 1px solid white;
@@ -378,4 +374,106 @@ main {
 
 .Ubuntu-card:hover {
     background-color: #dd4814;
+}
+
+/* Project section styling */
+
+.portfolio {
+    border: solid 1px red;
+    height: auto;
+    display: block;
+}
+
+.portfolio h2 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.filter-container {
+    display:block;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.filter {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.filter:hover {
+    color: black;
+    background-color: white;
+}
+
+.active {
+    color:black;
+    background-color: white;
+}
+
+.projects {
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    border: solid 1px green;
+}
+
+.project-card {
+    border: solid 1px red;
+    height: 350px;
+    width: 400px;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #66ff33 0%, #3366ff 100%);
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: center;
+    flex: 1 2;
+}
+
+.project-card h3 {
+    margin-top:0.5rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.project-card p {
+    margin: 0.5rem 1rem;
+}
+
+.project-card a {
+    margin: 1rem 0.5rem;
+}
+
+.project-logo {
+    height: 150px;
+    width: 150px;
+    margin: 1.5rem 0;
+    border-radius: 30px;
+}
+
+/* contact section stying */
+
+.contact h2 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
 }

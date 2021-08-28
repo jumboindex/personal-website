@@ -24,12 +24,16 @@ html {
 
 /* Fonts */
 
-h1, h2, h3, h4, h5, h6, span{
+h1, h2, h3, h4, h5, h6, span, a{
     font-family: 'Ubuntu', sans-serif;
 }
 
-p, a, figcaption {
+p, figcaption {
     font-family: 'Oxygen', sans-serif;
+    color: white;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
@@ -38,17 +42,26 @@ span {
     color: red;
 }
 
+.h2-heading {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 1rem;
+}
+
 /* Nav styling */
 
 nav {
     display:block;
     position: fixed;
     top:0;
-    height: 4.5rem;
+    height: 4rem;
     width: 100%;
     background-color: black;
     z-index: 3;
-   /* border: solid 1px red; */
 }
 
 nav ul {
@@ -73,7 +86,6 @@ nav ul li:hover {
 /* body offset for fixed navbar */
 
 main {
-    /*border: solid 1px red;*/
     position: relative;
     top: 4.5rem;
 }
@@ -158,8 +170,8 @@ main {
 }
 
 .img-container img {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     border-radius: 50% 20% / 10% 40%;
 }
 
@@ -186,15 +198,6 @@ main {
 
 /* About Section styling */
 
-.about h2 {
-    text-align: center;
-    width: 100%;
-    margin: 2rem 0;
-    font-size: 2rem;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-}
-
 .about-flexbox {
     height: 18.75rem;
     width: 100%;
@@ -205,8 +208,8 @@ main {
 }
 
 .about figure img {
-    height: 250px;
-    width: 250px;
+    height: 15.625rem;
+    width: 16.625rem;
     border-radius:  0.625rem; 
 }
 
@@ -216,7 +219,7 @@ main {
 
 .about p {
     width: 45%;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin-right: 2rem;  
 }
 
@@ -224,15 +227,6 @@ main {
 
 .technologies {
     margin: 1rem 0;
-}
-
-.technologies h2 {
-    text-align: center;
-    width: 100%;
-    margin: 2rem 0;
-    font-size: 2rem;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
 }
 
 .tech-grid {
@@ -379,18 +373,8 @@ main {
 /* Project section styling */
 
 .portfolio {
-    border: solid 1px red;
     height: auto;
     display: block;
-}
-
-.portfolio h2 {
-    text-align: center;
-    width: 100%;
-    margin: 2rem 0;
-    font-size: 2rem;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
 }
 
 .filter-container {
@@ -420,16 +404,14 @@ main {
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
-    border: solid 1px green;
 }
 
 .project-card {
-    border: solid 1px red;
-    height: 350px;
-    width: 400px;
+    height: 21.875rem;
+    width: 25rem;
     margin: 2rem;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     background: linear-gradient(to bottom right, #66ff33 0%, #3366ff 100%);
     display: inline-flex;
     flex-flow: column nowrap;
@@ -454,21 +436,16 @@ main {
 }
 
 .project-logo {
-    height: 150px;
-    width: 150px;
+    height: 9.375rem;
+    width: 9.375rem;
     margin: 1.5rem 0;
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 /* contact section stying */
 
-.contact h2 {
-    text-align: center;
-    width: 100%;
-    margin: 2rem 0;
-    font-size: 2rem;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+.contact {
+    height: 12.5rem;
 }
 
 .contact-flex {
@@ -476,4 +453,11 @@ main {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+}
+
+
+.logo {
+    height: 60px;
+    width: 60px;
+    padding: 32px;
 }

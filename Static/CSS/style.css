@@ -24,7 +24,7 @@ html {
 
 /* Fonts */
 
-h1, h2, h3, h4, h5, h6, span, a{
+h1, h2, h3, h4, h5, h6, span, a, btn {
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -187,7 +187,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 .datacenter h2 {
@@ -233,14 +233,17 @@ main {
     margin: 0 5vw;
     display: grid;
     grid-gap: 1.25rem;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
                         'html CSS Javascript Python'
                         'Pandas Pandas Flask Flask'
                         'Jira Confluence Grafana Observium'
                         'AWS AWS OnApp OnApp'
-                        'CentOS Ubuntu . .';
+                        'CentOS Ubuntu show-logo .';
     justify-items: stretch;
     align-items: center;
+    perspective: 600px;
 }
 
 .tech {
@@ -249,12 +252,37 @@ main {
     border: 1px solid white;
     border-radius: 0.625rem;
     cursor: pointer;
-    transition: 1s;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
 
 .tech h3 {
     line-height: 9.375rem;
     font-size: 1.5rem;
+}
+
+.card-face {
+    height:100%;
+    width:100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-face--back {
+    transform: rotateX(180deg);
+
+}
+
+.card-face--back img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.625rem;
+    background-color: white;
+}
+
+.tech.is-flipped {
+    transform: rotateX(180deg);
 }
 
 .html-card {
@@ -368,6 +396,17 @@ main {
 
 .Ubuntu-card:hover {
     background-color: #dd4814;
+}
+
+/* Reset cards styling */
+
+.show-logo {
+    grid-area: show-logo;
+}
+
+#showCards {
+    color: black;
+    background-color: white;
 }
 
 /* Project section styling */

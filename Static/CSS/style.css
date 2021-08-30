@@ -78,7 +78,9 @@ nav ul li {
 }
 
 nav ul li:hover {
-    border-bottom: 1px solid red;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 0.5rem;
 }
 
 .hamburger {
@@ -90,7 +92,7 @@ nav ul li:hover {
 main {
     position: relative;
     top: 4.5rem;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 /* Home content styling */
@@ -426,6 +428,7 @@ main {
 .portfolio {
     height: auto;
     display: block;
+    margin-top: 4rem;
 }
 
 .filter-container {
@@ -450,8 +453,11 @@ main {
 }
 
 .projects {
+    width: 100%;
+    max-width: 1200px;
+    height:26rem; 
+    margin: 1rem auto;  
     display: flex;
-    height: fit-content;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;

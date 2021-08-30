@@ -5,13 +5,15 @@ html {
     color: white;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    overflow: visible;
+    overflow: scroll;
 }
 
 .container {
     width: 100%;
     height:26rem; 
-    margin: 1rem 0;
+    margin: 1rem auto;
+    padding: 0 5vw;
+    max-width: 1200px;
 }
 
 .btn {
@@ -88,13 +90,15 @@ nav ul li:hover {
 main {
     position: relative;
     top: 4.5rem;
+    overflow: hidden;
 }
 
 /* Home content styling */
 
 .home {
-    display: inline-flex;
+    display: flex;
     justify-content: space-evenly;
+    
 }
 
 .home-container {
@@ -184,16 +188,20 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    height: 30rem;
+    width: 100%;
+    margin: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    text-align: center;
 }
 
 .datacenter h2 {
     font-size: 2rem;
+    line-height: 2.5rem;
     font-weight: 500;
-    max-width: 80%;
+    max-width: 1180px;
 }
 
 /* About Section styling */
@@ -226,7 +234,9 @@ main {
 /* Technologies styling */
 
 .technologies {
-    margin: 1rem 0;
+    margin: 1rem auto;
+    padding: 0 5vw;
+    max-width: 1200px;
 }
 
 .tech-grid {
@@ -407,6 +417,8 @@ main {
 #showCards {
     color: black;
     background-color: white;
+    border: 1px solid white;
+    border-radius: 0.625rem;
 }
 
 /* Project section styling */

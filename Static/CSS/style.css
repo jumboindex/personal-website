@@ -5,7 +5,6 @@ html {
     color: white;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    overflow: scroll;
 }
 
 .container {
@@ -23,7 +22,6 @@ html {
     padding: 1rem;
     border-radius: 3.125rem;
 }
-
 
 /* Fonts */
 
@@ -93,7 +91,7 @@ nav ul li:hover {
 main {
     position: relative;
     top: 4.5rem;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 /* Home content styling */
@@ -192,8 +190,8 @@ main {
     background-size: cover;
     overflow: hidden;
     height: 30rem;
-    width: 100%;
-    margin: 1rem 0;
+    max-width: 100%;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,6 +288,7 @@ main {
 .card-face--back img {
     height: 100%;
     width: 100%;
+    border: solid 1px white;
     border-radius: 0.625rem;
     background-color: white;
 }
@@ -473,7 +472,7 @@ main {
     background: linear-gradient(to bottom right, #66ff33 0%, #3366ff 100%);
     display: inline-flex;
     flex-flow: column nowrap;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     flex: 1 2;
 }
@@ -526,6 +525,8 @@ main {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    /* global styles */
+
     html {
         font-size: 14px;
     }
@@ -540,9 +541,13 @@ main {
                         '. btn btn .';
     }
 
+    /* tech grid styles */
+
     .card-face h3 {
         font-size: 1.3rem;
     }
+
+    /* project styles */
 
     .project-card {
         max-width: 200px;
@@ -567,6 +572,7 @@ main {
 @media screen and (min-width: 480px) and (max-width: 767px) {
 
     /* global styles */
+
     html {
         font-size: 12px;
     }
@@ -582,6 +588,7 @@ main {
     }
 
     /* home styles */
+
     .content {
         row-gap: 0.25rem;
         grid-template-areas: 
@@ -602,6 +609,7 @@ main {
     }
 
     /* datacenter styles */
+
     .datacenter h2 {
         font-size: 1.75rem;
         font-weight: 550;
@@ -609,12 +617,14 @@ main {
     }
 
     /* about styles */
+
     .about figure img {
         height: 16rem;
         width: 12rem;
     }
 
     /* tech grid styles */
+
     .technologies {
         padding: 0 2vw;
     }
@@ -628,6 +638,7 @@ main {
     }
 
     /* project styles */
+
     .projects {
         margin: 0;
     }
@@ -666,6 +677,7 @@ main {
 @media screen and (max-width: 480px) { 
 
     /* global styles */
+
     html {
         font-size: 12px;
     }
@@ -681,6 +693,7 @@ main {
     }
 
     /* home styles */
+
     .home-container {
         min-width: 169px;
     }
@@ -711,11 +724,13 @@ main {
     }
 
      /* datacenter styles */
+
      .datacenter h2 {
         font-size: 1.5rem;
         font-weight: 550;
         margin: 0 0.5rem;
     }
+
     /*about styling */
 
     .about {
@@ -723,12 +738,16 @@ main {
         margin-bottom: 4rem;
     }
 
+    .about h2 {
+        margin-bottom: 1rem;
+    }
+
      .about-flexbox {
          height: max-content;
      }
 
      .about-flexbox p {
-         margin: 2rem 0;
+         margin: 1rem 0 2rem 0;
          text-align: center;
          width: 80%;
      }

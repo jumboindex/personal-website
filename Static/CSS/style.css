@@ -200,6 +200,7 @@ main {
     max-width: 100%;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -210,12 +211,21 @@ main {
     line-height: 2.5rem;
     font-weight: 500;
     max-width: 1180px;
+    background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+.datacenter h3 {
+    position: relative;
+    top: 10rem;
+    background-color: black;
+    padding: 0.5rem;
+
 }
 
 /* About Section styling */
 
 .about-flexbox {
-    height: 18.75rem;
+    height: max-content;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -627,6 +637,10 @@ main {
         margin: 0 0.5rem;
     }
 
+    .datacenter h3 {
+        top: 8rem;
+    }
+
     /* about styles */
 
     .about figure img {
@@ -791,6 +805,10 @@ main {
         font-size: 1.5rem;
         font-weight: 550;
         margin: 0 0.5rem;
+    }
+
+    .datacenter h3 {
+        top: 6rem;
     }
 
     /*about styling */

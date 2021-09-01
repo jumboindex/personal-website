@@ -23,6 +23,13 @@ html {
     border-radius: 3.125rem;
 }
 
+.hyperlink-anchor {
+   position: relative;
+    display: block;
+    top: -4rem;
+    visibility: hidden;
+}
+
 /* Fonts */
 
 h1, h2, h3, h4, h5, h6, span, a, btn {
@@ -249,7 +256,7 @@ main {
     grid-template-areas: 
                         'html CSS Javascript Python'
                         'Pandas Pandas Flask Flask'
-                        'Jira Confluence Grafana Observium'
+                        'Jira Confluence Grafana git'
                         'AWS AWS OnApp OnApp'
                         'CentOS Ubuntu show-logo .';
     justify-items: stretch;
@@ -370,12 +377,12 @@ main {
     background-color: #fba35a;
 }
 
-.Observium-card {
-    grid-area: Observium;
+.git-card {
+    grid-area: git;
 }
 
-.Observium-card:hover{
-    background-color: #4051b5;
+.git-card:hover{
+    background-color: #f1502f;
 }
 
 .AWS-card {
@@ -465,7 +472,7 @@ main {
 
 .project-card {
     height: 21.875rem;
-    width: 25rem;
+    max-width: 23rem;
     margin: 2rem;
     text-align: center;
     border-radius: 1.875rem;
@@ -710,7 +717,6 @@ main {
     }
 
     .mobile-menu {
-        
         height: 100%;
         width: 100%;
         position: fixed;
@@ -719,7 +725,7 @@ main {
         top: 0;
         background-color: rgba(0,0,0, 0.9);
         overflow-x: hidden;
-        transition: 0.5s;
+        transition: 1s;
     }
 
     .mobile-links {

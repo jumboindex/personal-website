@@ -18,9 +18,9 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#home">About</a></li>
-                <li><a href="#home">Projects</a></li>
-                <li><a href="#home">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <img src="https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png" class="hamburger" alt="Hamburger menu image" id="hamburger"/>
         </nav>
@@ -31,10 +31,10 @@
             <!-- close button for mobile overlay -->
             <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
             <ul class="mobile-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#home">About</a></li>
-                <li><a href="#home">Projects</a></li>
-                <li><a href="#home">Contact</a></li>
+                <li><a class="mobile-anchor" href="#home">Home</a></li>
+                <li><a class="mobile-anchor" href="#about">About</a></li>
+                <li><a class="mobile-anchor" href="#projects">Projects</a></li>
+                <li><a class="mobile-anchor" href="#contact">Contact</a></li>
             </ul>
         </div>
     <!-- Main content -->
@@ -42,7 +42,8 @@
         <main>
 
         <!-- Home section content -->
-        
+
+            <a class="hyperlink-anchor" id="home"></a>
             <section class="home container">
                 <div class="content home-container">
                     <h1 class="title-row-1">Hi, I am <span>James</span></h1>
@@ -63,6 +64,7 @@
 
         <!-- about section content -->
 
+            <a class="hyperlink-anchor" id="about"></a>
             <section class="about container">
                 <h2 class="h2-heading">About <span>Me</span></h2>
                 <div class="about-flexbox">
@@ -119,9 +121,9 @@
                         <div class="card-face card-face--front"><h3>Grafana</h3></div>
                         <div class="card-face card-face--back"><img src="Static/Images/Grafana-logo.webp"></div>
                     </div>
-                    <div class="tech Observium-card">
-                        <div class="card-face card-face--front"><h3>Observium</h3></div>
-                        <div class="card-face card-face--back"><img src="Static/Images/observium-logo.png"></div>
+                    <div class="tech git-card">
+                        <div class="card-face card-face--front"><h3>git</h3></div>
+                        <div class="card-face card-face--back"><img src="Static/Images/git-icon.png"></div>
                     </div>
                     <div class="tech AWS-card">
                         <div class="card-face card-face--front"><h3>AWS</h3></div>
@@ -147,51 +149,51 @@
             </section>
 
         <!-- Projects content -->
-
+            <a class="hyperlink-anchor" id="projects"></a>
             <section class="portfolio">
                 <h2 class="h2-heading">Projects</h2>
                 <div class="filter-container">
-                    <btn class="btn filter">Show All</btn>
-                    <btn class="btn filter">Javascript</btn>
-                    <btn class="btn filter">Python</btn>
-                    <btn class="btn filter">Full Stack</btn>
+                    <btn class="btn filter" id="showAll">Show All</btn>
+                    <btn class="btn filter" id="javascript">Javascript</btn>
+                    <btn class="btn filter" id="python">Python</btn>
+                    <btn class="btn filter" id="fullstack">Full Stack</btn>
                 </div>
                 <div class="projects">
-                    <div class="badger project-card">
+                    <div class="badger project-card python fullstack">
                         <h3>Badger</h3>
                         <img class="project-logo" src="Static/Images/data-center-security.jpg">
                         <p> Full stack application which automates access reports for hyperscale cloud providers.</p>
+                        <a href="https://github.com/jumboindex/Badger" target="_blank" class="btn">Show me</a>
+                    </div>
+                    <div class="project-card javascript fullstack">
+                        <h3>TBC</h3>
+                        <img class="project-logo" src="Static/Images/data-center-security.jpg">
+                        <p> Full stack application using node and express for the backend.</p>
                         <a href="" target="_blank" class="btn">Show me</a>
                     </div>
                     <div class="badger project-card">
-                        <h3>Badger</h3>
+                        <h3>TBC</h3>
                         <img class="project-logo" src="Static/Images/data-center-security.jpg">
-                        <p> Full stack application which automates access reports for hyperscale cloud providers.</p>
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur corporis necessitatibus tempora... </p>
                         <a href="" target="_blank" class="btn">Show me</a>
                     </div>
                     <div class="badger project-card">
-                        <h3>Badger</h3>
+                        <h3>TBC</h3>
                         <img class="project-logo" src="Static/Images/data-center-security.jpg">
-                        <p> Full stack application which automates access reports for hyperscale cloud providers.</p>
-                        <a href="" target="_blank" class="btn">Show me</a>
-                    </div>
-                    <div class="badger project-card">
-                        <h3>Badger</h3>
-                        <img class="project-logo" src="Static/Images/data-center-security.jpg">
-                        <p> Full stack application which automates access reports for hyperscale cloud providers.</p>
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur corporis necessitatibus tempora...</p>
                         <a href="" target="_blank" class="btn">Show me</a>
                     </div>
                 </div>
             </section>
 
         <!-- Contact secton -->
-
+        <a class="hyperlink-anchor" id="contact"></a>
             <section class="contact">
                 <h2 class="h2-heading">Contact</h2>
                 <div class="contact-flex">
                     <a href="https://github.com/jumboindex" target="_blank"><img src="/Static/Images/GitHub-Mark-Light-64px.png" class="logo"></a>
-                    <a href="" target="_blank"><img src="Static/Images/email-icon.png" class="logo"></a>
-                    <a href="" target="_blank"><img src="Static/Images/Linkedin dark.png" class="logo"></a>
+                    <a href="mailto:ball.j.work@gmail.com" target="_blank"><img src="Static/Images/email-icon.png" class="logo"></a>
+                    <a href="https://www.linkedin.com/in/james-ball-9184b9123/" target="_blank"><img src="Static/Images/Linkedin dark.png" class="logo"></a>
                 </div>
             </section>
         </main>

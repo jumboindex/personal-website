@@ -26,3 +26,18 @@ showCards.addEventListener('click', () => {
         card.classList.toggle('is-flipped');        
     };
 });
+
+// mobile menu event listeners 
+
+let hamburgerIcon = document.getElementById('hamburger')
+let mobileMenu = document.getElementById('mobile-menu');
+
+hamburgerIcon.addEventListener('click', () => {
+    mobileMenu.style.display = "block";
+});
+
+let closeButton = document.getElementById('closebtn');
+
+closeButton.addEventListener('click', () => {
+    mobileMenu.style.display = "none";
+});

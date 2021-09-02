@@ -190,7 +190,7 @@ main {
 /* Data Center content styling */
 
 .datacenter {
-    background-image: url('https://github.com/jumboindex/personal-website/blob/main/Static/Images/data-center-sticky.jpg?raw=true');
+    background-image: url('../Images/data-center-sticky.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

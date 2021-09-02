@@ -190,7 +190,7 @@ main {
 /* Data Center content styling */
 
 .datacenter {
-    background-image: url('data-center-sticky.jpg');
+    background-image: url('/Static/Images/data-center-sticky.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

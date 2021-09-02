@@ -115,7 +115,7 @@ main {
 }
 
 .content { 
-    display: inline grid;
+    display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
@@ -190,7 +190,7 @@ main {
 /* Data Center content styling */
 
 .datacenter {
-    background-image: url('Static/Images/data\ center\ sticky.jpg');
+    background-image: url('/Static/Images/data\ center\ sticky.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

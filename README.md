@@ -1,4 +1,4 @@
-# Personal Website 
+# Personal Website
 
 ## Table of contents
 

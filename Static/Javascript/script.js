@@ -69,7 +69,7 @@ function filterProjects (filter) {
  };
 
 // create button event handerlers
-arrBtn = ['showAll', 'javascript', 'python', 'fullstack'];
+arrBtn = ['showAll', 'node', 'react', 'fullstack'];
 arrBtn.forEach( button => {
     document.getElementById(button).addEventListener('click', () => filterProjects(button));
 });

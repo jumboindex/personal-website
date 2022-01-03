@@ -10,7 +10,7 @@ html {
 .container {
     width: 100%;
     height: max-content; 
-    margin: 2rem auto;
+    margin: 2em auto;
     padding: 0 5vw;
     max-width: 1200px;
 }
@@ -19,14 +19,14 @@ html {
     text-align: center;
     font-weight: 500;
     background-color: red;
-    padding: 1rem;
-    border-radius: 3.125rem;
+    padding: 1em;
+    border-radius: 3.125em;
 }
 
 .hyperlink-anchor {
    position: relative;
     display: block;
-    top: -4rem;
+    top: -4em;
     visibility: hidden;
 }
 
@@ -53,7 +53,7 @@ span {
 .h2-heading {
     text-align: center;
     width: 100%;
-    margin: 2rem 0;
+    margin: 2em 0;
     font-size: 2rem;
     text-decoration: underline;
     text-decoration-color: red;
@@ -66,7 +66,7 @@ nav {
     display:block;
     position: fixed;
     top:0;
-    height: 4rem;
+    height: 4em;
     width: 100%;
     background-color: black;
     z-index: 3;
@@ -74,13 +74,13 @@ nav {
 
 nav ul {
     float: right;
-    margin: 1rem 2rem;
+    margin: 1em 2em;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 0.5rem;
-    padding: 0.25rem;
+    margin: 0 0.5em;
+    padding: 0.25em;
 }
 
 nav ul li:hover {
@@ -97,7 +97,7 @@ nav ul li:hover {
 
 main {
     position: relative;
-    top: 4.5rem;
+    top: 4.5em;
     overflow: hidden;
 }
 
@@ -111,7 +111,7 @@ main {
 
 .home-container {
     width: 45%;
-    height: 25rem;
+    height: 25em;
 }
 
 .content { 
@@ -136,10 +136,10 @@ main {
 
 .title-row-2 {
     grid-area: title-row-2;
-    margin: 0.625rem 1.25rem;
+    margin: 0.625em 1.25em;
     text-transform: capitalize;
     position: relative;
-    padding: 1rem 1.5rem;
+    padding: 1em 1.5em;
     color: black;
     z-index: 2;
 }
@@ -160,9 +160,9 @@ main {
     content: '';
     position: absolute;
     top: 0;
-    left: -6.25rem;
-    width: 6.25rem;
-    height: 0.125rem;
+    left: -6.25em;
+    width: 6.25em;
+    height: 0.125em;
     background: white;
 }
 
@@ -182,9 +182,9 @@ main {
 }
 
 .img-container img {
-    height: 20rem;
-    width: 24rem;
-    border-radius: 50% 20% / 10% 40%;
+    height: 18em;
+    width: 18em;
+    border-radius: 25%;
 }
 
 /* Data Center content styling */
@@ -196,7 +196,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 30rem;
+    height: 30em;
     max-width: 100%;
     padding: 0;
     display: flex;
@@ -216,9 +216,9 @@ main {
 
 .datacenter h3 {
     position: relative;
-    top: 10rem;
+    top: 10em;
     background-color: black;
-    padding: 0.5rem;
+    padding: 0.5em;
 
 }
 
@@ -231,6 +231,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap-reverse;
+    line-height: 1.5rem;
 }
 
 .about figure img {
@@ -245,8 +246,8 @@ main {
 
 .about p {
     width: 45%;
-    max-width: 37.5rem;
-    margin-right: 2rem;  
+    max-width: 37.5em;
+    margin-right: 2em;  
 }
 
 /* Technologies styling */
@@ -260,14 +261,14 @@ main {
 .tech-grid {
     margin: 0 5vw;
     display: grid;
-    grid-gap: 1.25rem;
+    grid-gap: 1.25em;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
                         'html CSS Javascript Python'
-                        'Pandas Pandas Flask Flask'
+                        'React React Redux Redux'
                         'Jira Confluence Grafana git'
-                        'AWS AWS OnApp OnApp'
+                        'Node Node Express Express'
                         'CentOS Ubuntu show-logo .';
     justify-items: stretch;
     align-items: center;
@@ -275,10 +276,10 @@ main {
 }
 
 .tech {
-    height: 9.375rem;
+    height: 9.375em;
     text-align: center;
     border: 1px solid white;
-    border-radius: 0.625rem;
+    border-radius: 0.625em;
     cursor: pointer;
     position: relative;
     transition: transform 1s;
@@ -306,7 +307,7 @@ main {
     height: 100%;
     width: 100%;
     border: solid 1px white;
-    border-radius: 0.625rem;
+    border-radius: 0.625em;
     background-color: white;
 }
 
@@ -346,21 +347,20 @@ main {
     background-color: #ffd43b;
 }
 
-.pandas-card {
-    grid-area: Pandas;
+.react-card {
+    grid-area: React;
 }
 
-.pandas-card:hover {
-    background-color: #150458;
+.react-card:hover {
+    background-color: #61dafb;
 }
 
-.Flask-card {
-    grid-area: Flask;
+.redux-card {
+    grid-area: Redux;
 }
 
-.Flask-card:hover {
-    background-color: white;
-    color: black;
+.redux-card:hover {
+    background-color: #7747bc;
 }
 
 .Jira-card {
@@ -395,20 +395,20 @@ main {
     background-color: #f1502f;
 }
 
-.AWS-card {
-    grid-area: AWS;
+.node-card {
+    grid-area: Node;
 }
 
-.AWS-card:hover {
-    background-color: #F90;
+.node-card:hover {
+    background-color: #539e43;
 }
 
-.OnApp-card {
-    grid-area: OnApp;
+.express-card {
+    grid-area: Express;
 }
 
-.OnApp-card:hover {
-    background-color: #0b1e48;
+.express-card:hover {
+    background-color: none;
 }
 
 .CentOS-card {
@@ -445,17 +445,17 @@ main {
 .portfolio {
     height: auto;
     display: block;
-    margin-top: 4rem;
+    margin-top: 4em;
 }
 
 .filter-container {
-    display:block;
+    display: block;
     text-align: center;
-    margin: 4rem 0;
+    margin: 4em 0;
 }
 
 .filter {
-    margin: 0 1rem;
+    margin: 0 1em;
     cursor: pointer;
 }
 
@@ -473,7 +473,7 @@ main {
     width: 100%;
     max-width: 1200px;
     height:max-content; 
-    margin: 1rem auto;  
+    margin: 1em auto;  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -481,11 +481,11 @@ main {
 }
 
 .project-card {
-    height: 21.875rem;
-    max-width: 23rem;
-    margin: 2rem;
+    height: 21.875em;
+    max-width: 23em;
+    margin: 2em;
     text-align: center;
-    border-radius: 1.875rem;
+    border-radius: 1.875em;
     background: linear-gradient(to bottom right, #66ff33 0%, #3366ff 100%);
     display: inline-flex;
     flex-flow: column nowrap;
@@ -495,31 +495,39 @@ main {
 }
 
 .project-card h3 {
-    margin-top:0.5rem;
+    margin-top:0.5em;
     font-size: 1.5rem;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
 
 .project-card p {
-    margin: 0.5rem 1rem;
+    margin: 0.5em 1em;
 }
 
 .project-card a {
-    margin: 1rem 0.5rem;
+    margin: 1em 0.5em;
 }
 
 .project-logo {
-    height: 9.375rem;
-    width: 9.375rem;
-    margin: 1.5rem 0;
-    border-radius: 1.875rem;
+    margin: 1.5em 0;
 }
+
+.reddit {
+    height: 12em;
+    width: 90%;
+}
+
+.findMyHat {
+    height: 10em;
+    width: 10em;
+}
+
 
 /* contact section stying */
 
 .contact {
-    height: 12.5rem;
+    height: 12.5em;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -533,9 +541,9 @@ main {
 
 
 .logo {
-    height: 3.75rem;
-    width: 3.75rem;
-    padding: 2rem;
+    height: 3.75em;
+    width: 3.75em;
+    padding: 2em;
 }
 
 /* media query tablets */
@@ -552,7 +560,7 @@ main {
 
     .content {
         min-width: 388px;
-        row-gap: 0.5rem;
+        row-gap: 0.5em;
         grid-template-areas: 
                         'title-row-1 title-row-1 title-row-1 .'
                         '. title-row-2 title-row-2 title-row-2'
@@ -586,9 +594,9 @@ main {
     }
 
     .project-logo {
-        height: 7rem;
-        width: 7rem;
-        margin: 1rem 0;
+        height: 7em;
+        width: 7em;
+        margin: 1em 0;
     }
 }
 
@@ -611,13 +619,13 @@ main {
     }
 
     main {
-        top:3rem;
+        top:3em;
     }
 
     /* home styles */
 
     .content {
-        row-gap: 0.25rem;
+        row-gap: 0.25em;
         grid-template-areas: 
                         'title-row-1 title-row-1 title-row-1 .'
                         '. . title-row-2 title-row-2'
@@ -630,14 +638,14 @@ main {
     }
 
     .img-container {
-        height: 16rem;
-        width: 16rem;
+        height: 16em;
+        width: 16em;
         align-self: center;
     }
 
     .img-container img {
-        height: 16rem;
-        width: 18rem;
+        height: 16em;
+        width: 18em;
     }
 
     /* datacenter styles */
@@ -645,18 +653,18 @@ main {
     .datacenter h2 {
         font-size: 1.75rem;
         font-weight: 550;
-        margin: 0 0.5rem;
+        margin: 0 0.5em;
     }
 
     .datacenter h3 {
-        top: 8rem;
+        top: 8em;
     }
 
     /* about styles */
 
     .about figure img {
-        height: 16rem;
-        width: 12rem;
+        height: 16em;
+        width: 12em;
     }
 
     /* tech grid styles */
@@ -666,7 +674,7 @@ main {
     }
 
     .tech {
-        height: 6.5rem;
+        height: 6.5em;
     }
     .card-face h3 {
         font-size: 1.25rem;
@@ -680,7 +688,7 @@ main {
     }
 
     .filter-container {
-        margin: 2.5rem 0;
+        margin: 2.5em 0;
     }
 
     .project-card {
@@ -698,9 +706,9 @@ main {
     }
 
     .project-logo {
-        height: 6rem;
-        width: 6rem;
-        margin: 1rem 0;
+        height: 6em;
+        width: 6em;
+        margin: 1em 0;
     }
 
     .logo {
@@ -737,7 +745,7 @@ main {
     .hamburger {
         display: inline;
         float: right;
-        margin: 1rem 2rem;
+        margin: 1em 2em;
         cursor: pointer;
     }
 
@@ -758,11 +766,11 @@ main {
         top: 25%;
         width: 100%;
         text-align: center;
-        margin-top: 1.875rem;
+        margin-top: 1.875em;
     }
 
     .mobile-menu li a {
-        padding: 0.5rem;
+        padding: 0.5em;
         font-size: 2.5rem;
         color: white;
         display: block;
@@ -786,7 +794,7 @@ main {
     }
 
     .content {
-        row-gap: 0.25rem;
+        row-gap: 0.25em;
         grid-template-areas: 
                         'title-row-1 title-row-1 title-row-1 title-row-1'
                         '. . title-row-2 title-row-2'
@@ -805,14 +813,9 @@ main {
     }
 
     .img-container img {
-        height: 12rem;
-        width: 12rem;
-        align-self: center
-    }
-
-    .img-container img {
-        height: 12rem;
-        width: 14rem;
+        align-self: center;
+        height: 12em;
+        width: 12em;
     }
 
      /* datacenter styles */
@@ -824,17 +827,17 @@ main {
     }
 
     .datacenter h3 {
-        top: 6rem;
+        top: 6em;
     }
 
     /*about styling */
 
     .about {
-        margin-bottom: 4rem;
+        margin-bottom: 4em;
     }
 
     .about h2 {
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
     }
 
      .about-flexbox {
@@ -842,7 +845,7 @@ main {
      }
 
      .about-flexbox p {
-         margin: 1rem 0 2rem 0;
+         margin: 1em 0 2em 0;
          text-align: center;
          width: 80%;
      }
@@ -854,12 +857,12 @@ main {
         margin: auto;
     }
     .tech {
-        height: 6.5rem;
+        height: 6.5em;
         min-width: 68px;
     }
 
     .card-face h3 {
-        font-size: 1rem;
+        font-size: 1em;
         line-height: 6.5rem;
     }
 
@@ -880,7 +883,7 @@ main {
     }
 
     .project-card {
-        margin: 1rem;
+        margin: 1em;
         max-width: 200px;
         min-width: 160px;
         max-height: 225px;
@@ -895,9 +898,9 @@ main {
     }
 
     .project-logo {
-        height: 6rem;
-        width: 6rem;
-        margin: 1rem 0;
+        height: 6em;
+        width: 6em;
+        margin: 1em 0;
     }
 
     .logo {

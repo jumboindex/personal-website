@@ -1,6 +1,6 @@
 // add event listeners to flip cards
 
-let cards = document.getElementsByClassName('tech');
+const cards = document.getElementsByClassName('tech');
 
 for (const card of cards) {
     card.addEventListener('click', () => card.classList.toggle('is-flipped'));  
@@ -8,7 +8,7 @@ for (const card of cards) {
 
 // add event listener to show all logs
 
-let showLogo = document.getElementById('showLogo');
+const showLogo = document.getElementById('showLogo');
 
 showLogo.addEventListener('click', () =>  {
     for (const card of cards) {
@@ -19,7 +19,7 @@ showLogo.addEventListener('click', () =>  {
 
 // add event listener to show all cards
 
-let showCards = document.getElementById('showCards');
+const showCards = document.getElementById('showCards');
 
 showCards.addEventListener('click', () => {
     for (const card of cards) {
@@ -30,8 +30,8 @@ showCards.addEventListener('click', () => {
 
 // mobile menu event listeners 
 
-let hamburgerIcon = document.getElementById('hamburger')
-let mobileMenu = document.getElementById('mobile-menu');
+const hamburgerIcon = document.getElementById('hamburger')
+const mobileMenu = document.getElementById('mobile-menu');
 
 // open mobile menu
 
@@ -40,14 +40,14 @@ hamburgerIcon.addEventListener('click', () => {
 });
 // close mobile menu
 
-let closeButton = document.getElementById('closebtn');
+const closeButton = document.getElementById('closebtn');
 
 closeButton.addEventListener('click', () => {
     mobileMenu.style.display = "none";
 });
 // close mobile menu when anchor tags clicked
 
-let mobileAnchors = document.getElementsByClassName('mobile-anchor')
+const mobileAnchors = document.getElementsByClassName('mobile-anchor')
 
 for (const link of mobileAnchors) {
     link.addEventListener('click', () => {
@@ -58,7 +58,7 @@ for (const link of mobileAnchors) {
 // filter project cards functions 
 
 function filterProjects (filter) {
-    let projectList = document.getElementsByClassName('project-card');
+    const projectList = document.getElementsByClassName('project-card');
 
     for (const project of projectList) {
         let classStr = project.className;
@@ -69,7 +69,8 @@ function filterProjects (filter) {
  };
 
 // create button event handerlers
-arrBtn = ['showAll', 'node', 'react', 'fullstack'];
+const arrBtn = ['showAll', 'node', 'react', 'fullstack'];
+
 arrBtn.forEach( button => {
     document.getElementById(button).addEventListener('click', () => filterProjects(button));
 });

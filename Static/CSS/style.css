@@ -471,7 +471,7 @@ main {
 
 .projects {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1800px;
     height:max-content; 
     margin: 1em auto;  
     display: flex;
@@ -481,8 +481,9 @@ main {
 }
 
 .project-card {
-    height: 21.875em;
-    max-width: 23em;
+    height: 34em;
+    max-width: 30em;
+    min-width: 16em;
     margin: 2em;
     text-align: center;
     border-radius: 1.875em;
@@ -495,14 +496,16 @@ main {
 }
 
 .project-card h3 {
-    margin-top:0.5em;
+    margin:0.5em, 1em;
     font-size: 1.5rem;
     text-decoration: underline;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.4rem;
+    line-height: 1.5em;
 }
 
 .project-card p {
     margin: 0.5em 1em;
+
 }
 
 .project-card a {
@@ -511,16 +514,25 @@ main {
 
 .project-logo {
     margin: 1.5em 0;
-}
-
-.reddit {
     height: 12em;
     width: 90%;
 }
 
-.findMyHat {
-    height: 10em;
-    width: 10em;
+.project-btn {
+    margin: 1em, 1em;
+}
+
+.hidden {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:default;
+    overflow: hidden;
+}
+
+.project-img {
+    height: 12em;
+    width: 90%;
 }
 
 
@@ -582,9 +594,9 @@ main {
     /* project styles */
 
     .project-card {
-        max-width: 200px;
-        min-width: 176px;
-        max-height: 250px;
+        max-width: 24em;
+        min-width: 18em;
+        max-height: 30em;
     }
     .project-card h3 {
         font-size: 1.25rem;
@@ -594,11 +606,6 @@ main {
         font-size: 0.9rem;
     }
 
-    .project-logo {
-        height: 7em;
-        width: 7em;
-        margin: 1em 0;
-    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -693,23 +700,18 @@ main {
     }
 
     .project-card {
-        max-width: 200px;
-        min-width: 176px;
-        max-height: 225px;
+        max-width: 20em;
+        min-width: 16em;
+        max-height: 28.5em;
 
     }
     .project-card h3 {
+        margin-top: 1em;
         font-size: 1.25rem;
     }
 
     .project-card p, .project-card a {
         font-size: 0.9rem;
-    }
-
-    .project-logo {
-        height: 6em;
-        width: 6em;
-        margin: 1em 0;
     }
 
     .logo {
@@ -885,9 +887,9 @@ main {
 
     .project-card {
         margin: 1em;
-        max-width: 200px;
-        min-width: 160px;
-        max-height: 225px;
+        max-width: 20em;
+        min-width: 16em;
+        max-height: 28em;
 
     }
     .project-card h3 {
@@ -896,12 +898,6 @@ main {
 
     .project-card p, .project-card a {
         font-size: 0.9rem;
-    }
-
-    .project-logo {
-        height: 6em;
-        width: 6em;
-        margin: 1em 0;
     }
 
     .logo {
